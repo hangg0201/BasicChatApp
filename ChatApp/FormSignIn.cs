@@ -107,13 +107,13 @@ namespace ChatApp
         private void resetPassBtn_Click(object sender, EventArgs e)
         {
             MailMessage mail = new MailMessage();
-            mail.From = new System.Net.Mail.MailAddress("21520217@gm.uit.edu.vn");
+            mail.From = new System.Net.Mail.MailAddress(".....@gmail.com");
             SmtpClient smtp = new SmtpClient();
             smtp.Port = 587;
             smtp.EnableSsl = true;
             smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
             smtp.UseDefaultCredentials = false;
-            smtp.Credentials = new NetworkCredential("21520217@gm.uit.edu.vn", "fevponykbsowabzc");
+            smtp.Credentials = new NetworkCredential(".....@gmail.com", "....");
             smtp.Host = "smtp.gmail.com";
 
             //recipient
